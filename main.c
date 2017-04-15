@@ -137,8 +137,8 @@ static void locate_security_bits(const tiff_t *tiff)
            ent = (dir_ent_t *)&ifd->entries[i];
            if (NATIVE2(tiff, ent->tag) == 0x9212) {
                ++sec_flag_count;
-               printf("%s: SecurityClassification tag: 0x%02x (%s)\n",
-                      tiff->fname, ent->type, "N/A");
+               printf("%s: SecurityClassification tag: 0x%02x)\n",
+                      tiff->fname, ent->type);
            }
        }
    }
